@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>AI Definitions</title>
+    <style>
+        * {
+            font-family: 'Fira Sans', serif;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        .rectangle {
+            flex: 0 0 calc(50% - 20px); /* Exactly two rectangles per row */
+            height: 150px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .rectangle:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .text {
+            font-size: 16px;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .rectangle {
+                flex: 1 1 calc(100% - 20px); /* One rectangle per row for smaller screens */
+                height: auto; /* Allow height to adjust based on content */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .text {
+                font-size: 14px; /* Smaller font size for small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="rectangle">
+            <div class="text">
+                “AI is a ﬁeld concerned with not just understanding but also building intelligent entities— machines that can compute how to act effectively and safely in a wide variety of novel situations.”<br><br>
+                <strong>Russell, Stuart, and Peter Norvig. Artificial Intelligence: a Modern Approach, Global Edition, Pearson Education, Limited, 2021. </strong>
+            </div>
+        </div>
+        <div class="rectangle">
+            <div class="text">
+                “Artificial Intelligence (AI) describes a set of advanced general purpose digital technologies that enable machines to do highly complex tasks effectively.”<br><br>
+                <strong>Hall, D. W. and Pesenti, J. (2017). Growing the artificial intelligence industry in the UK - GOV.UK.</strong>
+            </div>
+        </div>
+        <div class="rectangle">
+            <div class="text">
+                “AI is an interdisciplinary field, usually regarded as a branch of computer science, dealing with models and systems for the performance of functions generally associated with human intelligence, such as reasoning and learning” <br><br>
+                <strong>ISO/IEC TR 24028:2020. www.iso.org/obp/ui/#iso:std:iso-iec:tr:24028:ed-1:v1:en </strong>
+            </div>
+        </div>
+        <div class="rectangle">
+            <div class="text">
+                “Artificial Intelligence (AI) essentially refers to computing technologies that are inspired by the ways people use their brains and nervous systems to reason and make decisions, but typically operate quite differently.” <br><br>
+                <strong>Statista (2017),Statista Report 2017. Artificial Intelligence </strong>
+            </div>
+        </div>
+        <div class="rectangle">
+            <div class="text">
+                “AI is the science and engineering of making intelligent machines, especially intelligent computer programs.”<br><br>
+                <strong>McCarthy, John. “WHAT IS ARTIFICIAL INTELLIGENCE?,” 2007.</strong>
+            </div>
+        </div>
+        <div class="rectangle">
+            <div class="text">
+                “AI is the science of making machines do things that would require intelligence if done by men.”<br><br>
+                <strong>Minsky, M. L. (1969), Semantic information processing. Cambridge, MA: MIT Press. </strong>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
